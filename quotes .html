@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inspirational Quotes</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://source.unsplash.com/1200x800/?nature');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        max-width: 600px;
+        padding: 40px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        overflow: hidden;
+        max-height: 300px; /* Fixed height for the container */
+    }
+
+    h1 {
+        color: #333333;
+        font-family: 'Pacifico', cursive;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    #quote {
+        margin: 20px 0;
+        font-size: 24px;
+        color: #666666;
+        overflow: hidden;
+        word-wrap: break-word; /* Allow text wrapping */
+    }
+
+    button {
+        padding: 12px 24px;
+        background-color: #4caf50;
+        color: #ffffff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Inspirational Quotes</h1>
+    <div id="quote"></div>
+</div>
+<script >
+const quotes = [
+    "The only way to do great work is to love what you do. - Steve Jobs",
+    "Believe you can and you're halfway there. - Theodore Roosevelt",
+    "In the middle of difficulty lies opportunity. - Albert Einstein",
+    "It does not matter how slowly you go as long as you do not stop. - Confucius",
+    "The only person you are destined to become is the person you decide to be. - Ralph Waldo Emerson",
+    "Success is not final, failure is not fatal: It is the courage to continue that counts. - Winston Churchill",
+    "The only limit to our realization of tomorrow will be our doubts of today. - Franklin D. Roosevelt",
+    "What you get by achieving your goals is not as important as what you become by achieving your goals. - Zig Ziglar",
+    "The future belongs to those who believe in the beauty of their dreams. - Eleanor Roosevelt",
+    "The best way to predict the future is to invent it. - Alan Kay"
+];
+
+function displayRandomQuote() {
+    const quoteDiv = document.getElementById('quote');
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    quoteDiv.textContent = quotes[randomIndex];
+}
+
+displayRandomQuote();
+setInterval(displayRandomQuote, 5000);
+</script>
+</body>
+</html>

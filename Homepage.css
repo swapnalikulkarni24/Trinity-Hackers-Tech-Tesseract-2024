@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+}
+
+  nav{
+    width:100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.4s ease;
+    background-color:#002244;
+  }
+  nav .header{
+    height: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .logo a{
+    font-weight: 500;
+    font-size: 35px;
+    color: white;
+  }
+  nav.sticky .logo a{
+    color: #fff;
+  }
+  .header .nav-links{
+    display: flex;
+  }
+  .header .nav-links li{
+    list-style: none;
+    margin: 0 8px;
+  }
+   .nav-links li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 4px;
+    transition: all 0.3s ease;
+  }
+   .nav-links li a:hover{
+     color:#e5f0e6;
+   }
+
+
+
+
+.hp1{
+    width: 100vw;
+    background-color: #e5f0e6;
+    padding:20px 40px;
+    display: flex; 
+    justify-content: space-evenly;
+    /* flex-direction: row; */
+}
+.hp1 .button-88{
+  font-family: "inter",sans-serif;
+}
+.part1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.tagline{
+    font-family: "Playfair Display",serif;
+    font-size: 41px;
+    padding: 20px;
+    /* width: 100vw; */
+    color:#002244;
+    text-align: center;
+    padding-top: 50px;
+}
+.OPM{
+    font-family: "inter",sans-serif;
+    font-size: 14px;
+    padding-bottom:20px;
+    text-align: center;
+}
+.img{
+    display:block;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 400px;
+    margin: 50px;
+    width:450px;
+    align-self: center;
+    /* margin: auto; */
+}
+.Mission{
+   text-align:center ;
+   font-family: "inter",sans-serif;
+   color: #0066b2;
+   font-size: 22px;
+}
+.MissionText{
+    padding: 10px;
+    font-family: "inter",sans-serif;
+    max-width: 720px;
+    margin: auto;
+    color: #13274F;
+}
+
+
+body{
+    height: 100%;
+    width: 100%;
+    /* padding:10px 10px; */
+}
+a{
+    text-decoration: none;
+}
+.text{
+    max-width:567px;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 0 auto;
+}
+.Heading{
+    text-align: center;
+}
+.Cards{
+    display:flex;
+    margin:0px 150px;
+    display:grid; 
+    grid-template-columns: repeat(3,1fr);
+    gap: 1px; 
+    place-items: center;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius:27px;
+    overflow: hidden;
+    width: 270px;
+    height: 310px;
+    margin-top: 50px;
+    /* max-width: 300px; */
+}
+.card_img_container{
+       position: relative;
+       overflow: hidden;
+       height: 7rem;
+}
+.card_img{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.card_text{
+    display: flex;
+    flex-direction: column;
+    padding:0.7rem 0px;
+    /* padding: 2px; */
+    line-height:1.3rem;
+}
+.cardtext{
+  color: black;
+  padding-left: 1.5rem;
+  font-size:medium;
+  line-height:1.5rem;
+  max-height:0.1rem;
+}
+.card_desc{
+  max-width:17rem;
+  padding: 1.5rem;
+}
+.hp2{
+    padding:50px 0px;
+    width: 100vw;
+}
+
+.hp3{
+    background-color: #e5f0e6;
+    margin-top: 50px;
+    padding:50px 0px;
+    
+}
+.heading{
+    font-family: "Playfair Display",serif;
+    text-align: center;
+    font-size: 31px;
+    color: #13274F;
+}
+.content{
+    text-align: center;
+    font-family: "inter",sans-serif;
+    margin: 10px;
+}
+
+
+/* CSS */
+.button-88 {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background:#0066b2;
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #13274F  ;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button-88:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #e5f0e6;
+  }
+
+  .button-88:active {
+    box-shadow: 0 0.3em 1em -0.5em #e5f0e6;
+  }
+  .buttons{
+    margin: 50px 80px;
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    font-family: "inter",serif;
+    padding-top: 30px;
+  }
+  
+
+  @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+* {
+  font-family: Open Sans;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #3e77a5;
+  height: 50vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+
+.footer-distributed{
+  background: #002244;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  #7DF9FF;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #e5f0e6;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-family: "inter",sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
+}
